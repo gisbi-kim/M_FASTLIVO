@@ -321,7 +321,6 @@ private:
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "temp_node");
-    ROS_INFO("hello test");
     LIVONode node;
     ros::spin();
     return 0;

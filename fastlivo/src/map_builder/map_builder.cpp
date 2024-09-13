@@ -16,7 +16,7 @@ void MapBuilder::process(SyncPackage &package)
     {
         if (m_imu_processor->initialize(package))
             m_status = BuilderStatus::MAP_INIT;
-        std::cout << "[LIO]: IMU INITIALIZED!" << std::endl;
+        // std::cout << "[LIO]: IMU INITIALIZED!" << std::endl;
         return;
     }
 
@@ -35,7 +35,7 @@ void MapBuilder::process(SyncPackage &package)
             m_is_new_cloud = true;
             m_status = BuilderStatus::MAPPING;
         }
-        std::cout << "[LIO]: CLOUD MAP INITIALIZED!" << std::endl;
+        // std::cout << "[LIO]: CLOUD MAP INITIALIZED!" << std::endl;
         return;
     }
 

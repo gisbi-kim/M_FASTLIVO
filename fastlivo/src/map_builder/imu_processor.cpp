@@ -141,6 +141,6 @@ void IMUProcessor::undistort(SyncPackage &package)
                     break;
             }
         }
+        m_push = true;
     }
-    m_push = true;
 }
